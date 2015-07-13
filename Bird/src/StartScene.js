@@ -27,7 +27,7 @@ var StartLayer = cc.Layer.extend({
 
 			break;
 		case ccui.Widget.TOUCH_ENDED:
-			cc.director.pushScene(new cc.TransitionSlideInT(2,new GameScene()))//new OverScene());
+			cc.director.pushScene(new cc.TransitionSlideInT(1,new GameScene()))//new OverScene());
 			break;
 		case ccui.Widget.TOUCH_MOVED:
 

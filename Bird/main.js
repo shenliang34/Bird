@@ -6,6 +6,7 @@ cc.game.onStart = function(){
     cc.LoaderScene.preload(g_resources, function () {
 //        cc.director.runScene(new HelloWorldScene());
     	cc.director.runScene(new StartScene());
+//    	cc.director.runScene(new TouchScene());
     }, this);
 };
 cc.game.run();

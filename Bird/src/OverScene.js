@@ -22,6 +22,9 @@ var OverLayer = cc.Layer.extend({
 		continueBtn.addTouchEventListener(this.onTouchEvent, this);
 		return true;
 	},
+	setScore:function(value){
+		this._score.setString(value+"")
+	},
 	onTouchEvent : function(sender,type)
 	{
 		switch (type) {
@@ -42,11 +45,18 @@ var OverLayer = cc.Layer.extend({
 			break;
 		}
 	}
-})
+});
 var OverScene = cc.Scene.extend({
+	_layer:null,
+	ctor:function(){
+		this._super();
+		this._layer = new OverLayer();
+		this.addChild(this._layer);
+	},
 	onEnter:function(){
 		this._super();
-		var layer = new OverLayer();
-		this.addChild(layer);
+	},
+	setScore:function(value){
+		this._layer.setScore(value);
 	}
 })
