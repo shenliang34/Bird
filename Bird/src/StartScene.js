@@ -27,7 +27,11 @@ var StartLayer = cc.Layer.extend({
 
 			break;
 		case ccui.Widget.TOUCH_ENDED:
-			cc.director.pushScene(new cc.TransitionSlideInT(1,new GameScene()))//new OverScene());
+//			cc.director.pushScene(new cc.TransitionSlideInT(1,new GameScene()))//new OverScene());
+//			cc.director.replaceScene(new cc.TransitionFadeDown(1,new GameScene()));
+//			cc.director.replaceScene(new cc.Tr
+//			cc.director.replaceScene(new cc.TransitionProgressRadialCW(1,new GameScene()))
+			cc.director.replaceScene(new cc.TransitionPageTurn(1,new GameScene(),false));
 			break;
 		case ccui.Widget.TOUCH_MOVED:
 

@@ -135,9 +135,9 @@ var GameLayer = cc.Layer.extend({
 				
 				this._birdList.push(bird);
 				var self = this;
-				
+				//鸟的动画
 				bird.runAction(
-						new cc.Sequence(new cc.MoveTo(time,endPosition),
+					new cc.Sequence(new cc.MoveTo(time,endPosition),
 						new cc.CallFunc(function(){
 							for (var int = 0; int < self._birdList.length; int++) {
 								if(self._birdList[i] == bird){

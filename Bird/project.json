@@ -16,6 +16,7 @@
         "src/GameScene.js",
         "src/OverScene.js",
         "src/PublicData.js",
-        "src/TouchEventTest.js"
+        "src/TouchEventTest.js",
+        "src/Circle.js"
     ]
 }
